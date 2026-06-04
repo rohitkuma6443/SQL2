@@ -189,7 +189,3 @@ VALUES (1, 'Rahul');</code></pre>
   <p>
     Interviewers often ask for differences between commands, example scenarios, and how transactions and permissions are handled in real systems. Practice writing short SQL snippets for each category and explaining when and why you would use them.
   </p>
-
-</body>
-</html>
-```
