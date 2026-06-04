@@ -1,6 +1,6 @@
 <body>
 
-  <h1>Video 8: MySQL SELECT Query – How to Read Data from MySQL Database?</h1>
+  <h1>MySQL SELECT Query – How to Read Data from MySQL Database?</h1>
 
   <h2>Introduction</h2>
   <p>
