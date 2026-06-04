@@ -1,107 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>What is SQL?</title>
-</head>
-<body>
-
-  <h1>What is SQL?</h1>
-
-  <h2>Introduction</h2>
+  <h2>What is a Database?</h2>
   <p>
-    SQL (Structured Query Language) is a standard language used to interact with databases. 
-    It enables users and applications to store, retrieve, update, and manage data efficiently. 
-    In today's digital world, where massive amounts of information are generated every second, 
-    SQL plays a critical role in organizing and accessing data.
+    A <strong>database</strong> is an organized collection of data that allows easy storage, retrieval, and management of information.
   </p>
 
-  <h2>Understanding Databases</h2>
+  <h3>Example</h3>
+  <ul>
+    <li>Student information</li>
+    <li>Teacher information</li>
+    <li>Course details</li>
+  </ul>
+  <p>A database contains one or more <strong>tables</strong>.</p>
+
+  <hr>
+
+  <h2>Creating a Database</h2>
+  <h3>Syntax</h3>
+  <pre><code>CREATE DATABASE database_name;</code></pre>
+
+  <h3>Example</h3>
+  <pre><code>CREATE DATABASE school;</code></pre>
+
+  <hr>
+
+  <h2>Viewing Databases</h2>
+  <pre><code>SHOW DATABASES;</code></pre>
+
+  <hr>
+
+  <h2>Selecting a Database</h2>
+  <pre><code>USE school;</code></pre>
+  <p>After this command, all tables will be created inside the <strong>school</strong> database.</p>
+
+  <hr>
+
+  <h2>What is a Table?</h2>
   <p>
-    A database is an organized collection of data stored electronically. 
-    Just as a well-organized library makes it easier to find books, 
-    a database makes it easier to store and retrieve information quickly. 
-    Websites, mobile applications, banking systems, and business software 
-    all rely on databases to manage user and operational data.
+    A <strong>table</strong> is a collection of related data stored in rows and columns.
   </p>
 
-  <h2>How SQL Works (Step by Step)</h2>
+  <h3>Example</h3>
+  <table border="1" cellpadding="5">
+    <tr>
+      <th>Student_ID</th>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Rahul</td>
+      <td>Mumbai</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Priya</td>
+      <td>Delhi</td>
+    </tr>
+  </table>
+
+  <h3>Components</h3>
+  <ul>
+    <li><strong>Rows</strong> → Records</li>
+    <li><strong>Columns</strong> → Fields</li>
+    <li><strong>Data Types</strong> → Define the type of data stored</li>
+  </ul>
+
+  <hr>
+
+  <h2>CREATE TABLE Statement</h2>
+  <h3>Syntax</h3>
+  <pre><code>CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype
+);</code></pre>
+
+  <h3>Example</h3>
+  <pre><code>CREATE TABLE student (
+    student_id INT,
+    student_name VARCHAR(50),
+    city VARCHAR(50)
+);</code></pre>
+
+  <hr>
+
+  <h2>Common Data Types</h2>
+  <table border="1" cellpadding="5">
+    <tr>
+      <th>Data Type</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>INT</td>
+      <td>Whole numbers</td>
+    </tr>
+    <tr>
+      <td>VARCHAR(n)</td>
+      <td>Text values</td>
+    </tr>
+    <tr>
+      <td>FLOAT</td>
+      <td>Decimal numbers</td>
+    </tr>
+    <tr>
+      <td>DATE</td>
+      <td>Date values</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>True/False values</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h2>Examples</h2>
+  <h3>Example 1: Student Table</h3>
+  <pre><code>CREATE TABLE student (
+    student_id INT,
+    student_name VARCHAR(50),
+    city VARCHAR(50)
+);</code></pre>
+
+  <h3>Example 2: Customer Table</h3>
+  <pre><code>CREATE TABLE customer (
+    customer_id INT,
+    customer_name VARCHAR(50),
+    city VARCHAR(50)
+);</code></pre>
+
+  <h3>Example 3: Employee Table</h3>
+  <pre><code>CREATE TABLE employee (
+    emp_id INT,
+    emp_name VARCHAR(100),
+    department VARCHAR(50),
+    salary FLOAT
+);</code></pre>
+
+  <h3>Example 4: Product Table</h3>
+  <pre><code>CREATE TABLE product (
+    product_id INT,
+    product_name VARCHAR(100),
+    price FLOAT,
+    quantity INT
+);</code></pre>
+
+  <h3>Example 5: Book Table</h3>
+  <pre><code>CREATE TABLE book (
+    book_id INT,
+    title VARCHAR(100),
+    author VARCHAR(100)
+);</code></pre>
+
+  <hr>
+
+  <h2>Viewing Tables</h2>
+  <pre><code>SHOW TABLES;</code></pre>
+
+  <h2>Describing a Table</h2>
+  <pre><code>DESCRIBE student;</code></pre>
+  <p>or</p>
+  <pre><code>DESC student;</code></pre>
+
+  <hr>
+
+  <h2>Table with Constraints</h2>
+  <pre><code>CREATE TABLE student (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50) NOT NULL,
+    city VARCHAR(50)
+);</code></pre>
+
+  <h3>Constraints</h3>
+  <ul>
+    <li><strong>PRIMARY KEY</strong> → Unique value for each record.</li>
+    <li><strong>NOT NULL</strong> → Prevents empty values.</li>
+  </ul>
+
+  <hr>
+
+  <h1>Practice Exercises</h1>
+  <h3>Exercise 1</h3>
+  <p>Create a database named <code>college_db</code>.</p>
+
+  <h3>Exercise 2</h3>
+  <p>Create a table named <code>college</code> with:</p>
+  <ul>
+    <li>college_id</li>
+    <li>college_name</li>
+    <li>city</li>
+  </ul>
+
+  <h3>Exercise 3</h3>
+  <p>Create a table named <code>teacher</code> with:</p>
+  <ul>
+    <li>teacher_id</li>
+    <li>teacher_name</li>
+    <li>subject</li>
+  </ul>
+
+  <h3>Exercise 4</h3>
+  <p>Create a table named <code>hospital</code> with:</p>
+  <ul>
+    <li>patient_id</li>
+    <li>patient_name</li>
+    <li>disease</li>
+    <li>age</li>
+  </ul>
+
+  <h3>Exercise 5</h3>
+  <p>Create a table named <code>mobile</code> with:</p>
+  <ul>
+    <li>mobile_id</li>
+    <li>brand</li>
+    <li>model</li>
+    <li>price</li>
+  </ul>
+
+  <hr>
+
+  <h2>Important Commands Summary</h2>
+  <h3>Create Database</h3>
+  <pre><code>CREATE DATABASE database_name;</code></pre>
+
+  <h3>Show Databases</h3>
+  <pre><code>SHOW DATABASES;</code></pre>
+
+  <h3>Select Database</h3>
+  <pre><code>USE database_name;</code></pre>
+
+  <h3>Create Table</h3>
+  <pre><code>CREATE TABLE table_name (
+    column_name datatype,
+    column_name datatype
+);</code></pre>
+
+  <h3>Show Tables</h3>
+  <pre><code>SHOW TABLES;</code></pre>
+
+  <h3>Describe Table</h3>
+  <pre><code>DESC table_name;</code></pre>
+
+  <hr>
+
+  <h2>Key Points to Remember</h2>
   <ol>
-    <li><strong>User Sends a Request:</strong> A user performs an action in an application, such as logging in, searching for a product, or checking a bank balance.</li>
-    <li><strong>Application Creates an SQL Query:</strong> The application converts the user's request into an SQL query. For example:
-      <pre><code>SELECT * FROM users WHERE id = 1;</code></pre>
-    </li>
-    <li><strong>Query is Sent to the Database:</strong> The application sends the SQL query to the database management system (DBMS), such as MySQL or PostgreSQL.</li>
-    <li><strong>Database Processes the Query:</strong> The database analyzes the query, checks the tables, indexes, and permissions, and determines how to retrieve or modify the required data.</li>
-    <li><strong>Database Executes the Query:</strong> The database performs the requested operation, such as creating, reading, updating, or deleting data.</li>
-    <li><strong>Results are Generated:</strong> After execution, the database prepares the result. This may be a set of records, a confirmation message, or an error message.</li>
-    <li><strong>Results are Returned to the Application:</strong> The database sends the results back to the application.</li>
-    <li><strong>Information is Displayed to the User:</strong> The application presents the data in a user-friendly format, such as a webpage, dashboard, report, or mobile app screen.</li>
+    <li>A database stores multiple tables.</li>
+    <li>Create a database using <code>CREATE DATABASE</code>.</li>
+    <li>Select a database using <code>USE</code>.</li>
+    <li>Create tables using <code>CREATE TABLE</code>.</li>
+    <li>Every column must have a data type.</li>
+    <li>Use <code>SHOW DATABASES</code> and <code>SHOW TABLES</code> to verify creation.</li>
+    <li>Use <code>DESC</code> to view table structure.</li>
+    <li>Constraints such as <code>PRIMARY KEY</code> and <code>NOT NULL</code> help maintain data integrity.</li>
   </ol>
-
-  <h2>CRUD Operations in SQL</h2>
-  <p>The four fundamental operations performed on database data are known as CRUD:</p>
-  <ul>
-    <li><strong>Create</strong> – Add new records to a database.</li>
-    <li><strong>Read</strong> – Retrieve existing data.</li>
-    <li><strong>Update</strong> – Modify existing records.</li>
-    <li><strong>Delete</strong> – Remove records from the database.</li>
-  </ul>
-
-  <h3>Examples</h3>
-  <p><strong>Create</strong></p>
-  <pre><code>INSERT INTO users (name, email)
-VALUES ('John', 'john@example.com');</code></pre>
-
-  <p><strong>Read</strong></p>
-  <pre><code>SELECT * FROM users;</code></pre>
-
-  <p><strong>Update</strong></p>
-  <pre><code>UPDATE users
-SET email = 'newemail@example.com'
-WHERE id = 1;</code></pre>
-
-  <p><strong>Delete</strong></p>
-  <pre><code>DELETE FROM users
-WHERE id = 1;</code></pre>
-
-  <h2>Real-World Applications of SQL</h2>
-  <ul>
-    <li>Banking systems for checking balances and transaction records.</li>
-    <li>E-commerce platforms for managing products and customer data.</li>
-    <li>Business reporting and analytics.</li>
-    <li>Customer relationship management (CRM) systems.</li>
-    <li>Web and mobile applications.</li>
-  </ul>
-
-  <h2>Importance of Learning SQL</h2>
-  <p>SQL is one of the most valuable technical skills in the IT industry. It is commonly required for roles such as:</p>
-  <ul>
-    <li>Software Developer</li>
-    <li>Data Analyst</li>
-    <li>Data Scientist</li>
-    <li>Database Administrator</li>
-    <li>Business Analyst</li>
-    <li>Backend Developer</li>
-  </ul>
-
-  <h2>Learning Path</h2>
-  <p>To build strong SQL skills, learners can start with database concepts and then move on to popular database systems such as MySQL and PostgreSQL. Key topics typically include:</p>
-  <ul>
-    <li>Database creation</li>
-    <li>Table management</li>
-    <li>SQL queries</li>
-    <li>Constraints and keys</li>
-    <li>Joins and relationships</li>
-    <li>Advanced database concepts</li>
-  </ul>
-
-  <h2>Conclusion</h2>
-  <p>
-    SQL is the fundamental language used to manage and interact with databases. 
-    By learning SQL, beginners gain the ability to organize, retrieve, and manipulate data efficiently, 
-    making it an essential skill for modern technology and data-driven careers.
-  </p>
-
-</body>
-</html>
