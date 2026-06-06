@@ -1,4 +1,7 @@
-<h1>SQL Notes – School Database</h1>
+```html id="4h7m1z"
+<body>
+
+    <h1>SQL Notes – School Database</h1>
 
     <h3>Topics Covered</h3>
 
