@@ -1,4 +1,3 @@
-```html id="z1m8n4"
 <h1>SQL Notes – School Database</h1>
 
 <h3>Topics Covered</h3>
