@@ -1,4 +1,4 @@
-```html id="6q2v9k"
+
 <h1>MySQL SELECT and UPDATE Query Notes</h1>
 
 <h3>Topics Covered</h3>
@@ -336,4 +336,3 @@ where ID = 103;
     <li>Modify records using UPDATE query</li>
     <li>Use unique IDs for safe updates</li>
 </ul>
-```
