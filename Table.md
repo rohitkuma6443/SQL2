@@ -14,27 +14,18 @@
 
 <h2>1. Create Database</h2>
 
-    <pre>
-create database School;
-    </pre>
+<pre>create database School;    </pre>
 
-    <h3>Explanation</h3>
-    <ul>
-        <li><b>CREATE DATABASE</b> is used to create a new database.</li>
-        <li>Here, the database name is <b>School</b>.</li>
-    </ul>
-
-    <p>
-        A database is like a container that stores tables, records, and information.
-    </p>
-
-    <hr>
-
-    <h2>2. Select Database</h2>
-
-    <pre>
+<h3>Explanation</h3>
+<ul>
+    <li><b>CREATE DATABASE</b> is used to create a new database.</li>
+    <li>Here, the database name is <b>School</b>.</li>
+</ul>
+<p>A database is like a container that stores tables, records, and information.</p>
+<hr>    <h2>2. Select Database</h2>
+<pre>
 use school;
-    </pre>
+</pre>
 
     <h3>Explanation</h3>
     <ul>
