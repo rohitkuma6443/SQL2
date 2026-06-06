@@ -1,6 +1,4 @@
-<body>
-
-    <h1>SQL Notes – School Database</h1>
+<h1>SQL Notes – School Database</h1>
 
     <h2>Introduction</h2>
     <p>
