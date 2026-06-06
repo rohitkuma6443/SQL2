@@ -326,7 +326,6 @@ where ID = 103;
 
 <hr>
 
-```html
 <hr>
 
 <h2>16. DELETE Query</h2>
