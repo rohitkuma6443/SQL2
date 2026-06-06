@@ -1,12 +1,6 @@
 <h1>SQL Notes – School Database</h1>
-
-    <h2>Introduction</h2>
-    <p>
-        In this project, we are learning basic SQL commands using a School Database example.
-    </p>
-
-    <h3>Topics Covered</h3>
-    <ul>
+<h3>Topics Covered</h3>
+<ul>
         <li>Create Database</li>
         <li>Use Database</li>
         <li>Create Table</li>
@@ -14,11 +8,11 @@
         <li>View Data</li>
         <li>Delete Data</li>
         <li>Remove Table</li>
-    </ul>
+</ul>
 
-    <hr>
+<hr>
 
-    <h2>1. Create Database</h2>
+<h2>1. Create Database</h2>
 
     <pre>
 create database School;
