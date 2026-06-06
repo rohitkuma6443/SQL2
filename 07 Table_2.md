@@ -326,6 +326,91 @@ where ID = 103;
 
 <hr>
 
+```html
+<hr>
+
+<h2>16. DELETE Query</h2>
+
+<p>
+DELETE query is used to remove records from a table.
+</p>
+
+<hr>
+
+<h2>17. Delete Specific Record Using WHERE Clause</h2>
+
+<pre>
+delete from Student
+where ID = 104;
+</pre>
+
+<h3>Explanation</h3>
+
+<ul>
+    <li>DELETE removes data from a table.</li>
+    <li>WHERE clause specifies which record should be deleted.</li>
+    <li>Only the student with ID 104 will be deleted.</li>
+</ul>
+
+<hr>
+
+<h2>18. Delete All Records from Table</h2>
+
+<pre>
+delete from Student;
+</pre>
+
+<h3>Explanation</h3>
+
+<ul>
+    <li>Deletes all records from the table.</li>
+    <li>Table structure remains safe.</li>
+    <li>Columns and table design are not removed.</li>
+</ul>
+
+<hr>
+
+<h2>19. Drop Entire Table</h2>
+
+<pre>
+drop table Student;
+</pre>
+
+<h3>Explanation</h3>
+
+<ul>
+    <li>DROP TABLE completely removes the table.</li>
+    <li>Both data and table structure are deleted permanently.</li>
+</ul>
+
+<hr>
+
+<h2>20. Difference Between DELETE and DROP</h2>
+
+<table border="1">
+
+<tr>
+    <th>DELETE</th>
+    <th>DROP</th>
+</tr>
+
+<tr>
+    <td>Deletes records only</td>
+    <td>Deletes complete table</td>
+</tr>
+
+<tr>
+    <td>Table structure remains</td>
+    <td>Table structure is removed</td>
+</tr>
+
+<tr>
+    <td>Can use WHERE clause</td>
+    <td>Cannot use WHERE clause</td>
+</tr>
+
+</table>
+
 <h2>Conclusion</h2>
 
 <ul>
