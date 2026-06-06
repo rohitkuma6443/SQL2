@@ -1,4 +1,4 @@
-```html id="8q4n2x"
+
 <h1>MySQL Datatypes Notes</h1>
 
 <h3>Topics Covered</h3>
@@ -339,14 +339,3 @@ create table Employee(
 
 </table>
 
-<hr>
-
-<h2>Conclusion</h2>
-
-<ul>
-    <li>Datatypes define what type of data can be stored.</li>
-    <li>Different datatypes are used for different purposes.</li>
-    <li>Choosing the correct datatype improves database performance.</li>
-    <li>Datatypes help maintain data accuracy and efficiency.</li>
-</ul>
-```
